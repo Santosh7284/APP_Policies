@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy - GTA Cheat Codes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d0d0f;
+    --bg-panel: #151518;
+    --bg-panel-alt: #1b1b1f;
+    --pink: #ff2e88;
+    --green: #7fff3f;
+    --yellow: #ffd93f;
+    --cyan: #35e6e6;
+    --text: #eeeeee;
+    --text-dim: #a8a8b0;
+    --border: #2c2c32;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: var(--bg);
+    background-image:
+      repeating-linear-gradient(135deg, rgba(255,255,255,0.015) 0px, rgba(255,255,255,0.015) 2px, transparent 2px, transparent 40px),
+      radial-gradient(ellipse at top left, rgba(255,46,136,0.10), transparent 55%),
+      radial-gradient(ellipse at bottom right, rgba(127,255,63,0.08), transparent 55%);
+    color: var(--text);
+    font-family: 'Oswald', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 0 20px 60px;
+  }
+
+  /* HERO */
+  .hero {
+    position: relative;
+    padding: 70px 20px 46px;
+    text-align: center;
+    border-bottom: 4px solid var(--green);
+    background:
+      linear-gradient(180deg, rgba(255,46,136,0.14), transparent 70%);
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      repeating-linear-gradient(115deg, transparent 0 24px, rgba(255,255,255,0.02) 24px 26px);
+    pointer-events: none;
+  }
+
+  .hero .tag {
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.35em;
+    font-size: 0.72em;
+    color: var(--yellow);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    border: 1px solid var(--yellow);
+    padding: 5px 14px;
+    border-radius: 2px;
+  }
+
+  h1.title {
+    font-family: 'Bebas Neue', 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: clamp(2.6em, 9vw, 4.6em);
+    letter-spacing: 0.03em;
+    margin: 0;
+    line-height: 0.95;
+    color: var(--text);
+    text-shadow:
+      3px 3px 0 var(--pink),
+      6px 6px 0 rgba(0,0,0,0.5);
+    transform: skewX(-4deg);
+  }
+
+  h1.title span {
+    display: block;
+    color: var(--green);
+    font-size: 0.42em;
+    letter-spacing: 0.28em;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.6);
+    margin-top: 10px;
+  }
+
+  .hero .sub {
+    margin-top: 22px;
+    color: var(--text-dim);
+    font-size: 0.95em;
+    letter-spacing: 0.03em;
+  }
+
+  /* NAV / TOC */
+  .toc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin: 30px 0 10px;
+    padding: 0;
+    list-style: none;
+  }
+
+  .toc li a {
+    display: block;
+    font-size: 0.78em;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    text-decoration: none;
+    border: 1px solid var(--border);
+    background: var(--bg-panel);
+    padding: 7px 12px;
+    border-radius: 3px;
+    transition: border-color 0.15s ease, color 0.15s ease, transform 0.15s ease;
+  }
+
+  .toc li a:hover {
+    border-color: var(--pink);
+    color: var(--yellow);
+    transform: translateY(-1px);
+  }
+
+  /* SECTIONS */
+  section.card {
+    background: var(--bg-panel);
+    border: 1px solid var(--border);
+    border-left: 5px solid var(--pink);
+    border-radius: 4px;
+    padding: 28px 30px;
+    margin-top: 26px;
+    position: relative;
+  }
+
+  section.card:nth-of-type(even) {
+    border-left-color: var(--green);
+  }
+
+  section.card .num {
+    position: absolute;
+    top: -18px;
+    left: 20px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--yellow);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.1em;
+    letter-spacing: 0.05em;
+    padding: 2px 12px;
+    border-radius: 3px;
+  }
+
+  h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    font-size: 1.7em;
+    margin: 6px 0 16px;
+    color: var(--text);
+    text-transform: uppercase;
+  }
+
+  h2 .accent {
+    color: var(--green);
+  }
+
+  p { margin: 0 0 14px; color: var(--text); }
+  p:last-child { margin-bottom: 0; }
+
+  strong { color: var(--yellow); font-weight: 600; }
+
+  ul {
+    padding-left: 22px;
+    margin: 0 0 14px;
+  }
+
+  ul li {
+    margin-bottom: 6px;
+    color: var(--text);
+  }
+
+  ul li::marker {
+    color: var(--pink);
+  }
+
+  code {
+    background: rgba(127,255,63,0.12);
+    color: var(--green);
+    padding: 2px 7px;
+    border-radius: 3px;
+    font-size: 0.9em;
+    font-family: 'Courier New', monospace;
+    border: 1px solid rgba(127,255,63,0.25);
+  }
+
+  a {
+    color: var(--cyan);
+    text-decoration: none;
+    border-bottom: 1px dashed rgba(53,230,230,0.5);
+  }
+  a:hover { color: var(--yellow); border-bottom-color: var(--yellow); }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 6px 0 4px;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+
+  th, td {
+    border: 1px solid var(--border);
+    padding: 12px 14px;
+    text-align: left;
+    font-size: 0.95em;
+  }
+
+  th {
+    background: rgba(255,46,136,0.14);
+    color: var(--yellow);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.8em;
+    font-weight: 600;
+  }
+
+  td { background: var(--bg-panel-alt); }
+
+  .contact-box {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--bg-panel-alt);
+    border: 1px dashed var(--yellow);
+    border-radius: 4px;
+    padding: 16px 18px;
+    flex-wrap: wrap;
+  }
+
+  .contact-box .emoji { font-size: 1.6em; }
+
+  .contact-box a {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    color: var(--yellow);
+    border-bottom-color: rgba(255,217,63,0.5);
+    word-break: break-all;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--text-dim);
+    font-size: 0.8em;
+    letter-spacing: 0.05em;
+  }
+
+  footer .stars { color: var(--yellow); letter-spacing: 0.4em; margin-bottom: 8px; }
+
+  ::selection {
+    background: var(--pink);
+    color: #0d0d0f;
+  }
+
+  @media (max-width: 480px) {
+    section.card { padding: 24px 18px; }
+    h2 { font-size: 1.4em; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <span class="tag">Legal &middot; Player Info</span>
+  <h1 class="title">GTA Cheat Codes<span>Privacy Policy</span></h1>
+  <p class="sub">No account. No personal data grab. Just codes, kept offline.</p>
+</div>
+
+<div class="wrap">
+
+  <ul class="toc">
+    <li><a href="#s1">01 Data</a></li>
+    <li><a href="#s2">02 Storage</a></li>
+    <li><a href="#s3">03 Ads</a></li>
+    <li><a href="#s4">04 Third-Party</a></li>
+    <li><a href="#s5">05 Kids</a></li>
+    <li><a href="#s6">06 Data Safety</a></li>
+    <li><a href="#s7">07 Changes</a></li>
+    <li><a href="#s8">08 Contact</a></li>
+  </ul>
+
+  <section class="card" id="s1">
+    <span class="num">01</span>
+    <h2>Information We <span class="accent">Collect</span></h2>
+    <p><strong>GTA Cheat Codes</strong> is an offline reference application. We do not require users to create an account or provide personal information such as their name, email address, or phone number.</p>
+    <p>The app itself does not collect, store, or transmit your personal information to our own servers.</p>
+    <p>However, the app uses <strong>Google AdMob</strong> to display advertisements, and Google may process certain device and usage information as described below.</p>
+  </section>
+
+  <section class="card" id="s2">
+    <span class="num">02</span>
+    <h2>Local <span class="accent">Storage</span></h2>
+    <p>The application uses local device storage (<code>SharedPreferences</code>) only to save your preferences on your device. This includes:</p>
+    <ul>
+      <li>Saved favorite cheat codes</li>
+      <li>App theme preference (Dark Mode or Light Mode)</li>
+    </ul>
+    <p>This information remains on your device and is never sent to our servers.</p>
+  </section>
+
+  <section class="card" id="s3">
+    <span class="num">03</span>
+    <h2>Advertising <span class="accent">(Google AdMob)</span></h2>
+    <p>This app uses <strong>Google AdMob</strong> to display advertisements. Google AdMob may automatically collect or process certain information, including:</p>
+    <ul>
+      <li>Advertising ID or other device identifiers</li>
+      <li>IP address</li>
+      <li>Approximate location (country or region level)</li>
+      <li>App usage and advertising interaction information</li>
+      <li>Device and diagnostic information</li>
+    </ul>
+    <p>This information is used by Google to provide, measure, and improve advertisements, including personalized or non-personalized ads where applicable.</p>
+    <p>Google's Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a></p>
+    <p>You can manage your advertising preferences through your Android device settings.</p>
+  </section>
+
+  <section class="card" id="s4">
+    <span class="num">04</span>
+    <h2>Third-Party <span class="accent">Services</span></h2>
+    <p>This app currently uses the following third-party service:</p>
+    <table>
+      <thead>
+        <tr><th>Service</th><th>Purpose</th><th>Privacy Policy</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Google AdMob</td>
+          <td>In-app advertising</td>
+          <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>We do not intentionally integrate any additional analytics or tracking services unless this Privacy Policy is updated.</p>
+  </section>
+
+  <section class="card" id="s5">
+    <span class="num">05</span>
+    <h2>Children's <span class="accent">Privacy</span></h2>
+    <p>This application is not specifically directed toward children under the age of 13.</p>
+    <p>We do not knowingly collect personal information directly from children.</p>
+  </section>
+
+  <section class="card" id="s6">
+    <span class="num">06</span>
+    <h2>Data <span class="accent">Safety</span></h2>
+    <p>The app stores your favorites and theme preference only on your device.</p>
+    <p>Google AdMob may process certain device and advertising-related information to provide advertising services in accordance with Google's Privacy Policy.</p>
+  </section>
+
+  <section class="card" id="s7">
+    <span class="num">07</span>
+    <h2>Changes to This <span class="accent">Policy</span></h2>
+    <p>We may update this Privacy Policy from time to time.</p>
+    <p>Any changes will be reflected by updating the <strong>Effective Date</strong> at the top of this page.</p>
+  </section>
+
+  <section class="card" id="s8">
+    <span class="num">08</span>
+    <h2>Contact <span class="accent">Us</span></h2>
+    <p>If you have any questions about this Privacy Policy, please contact us.</p>
+    <div class="contact-box">
+      <span class="emoji">📧</span>
+      <a href="mailto:chmpadevi080@gmail.com">chmpadevi080@gmail.com</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="stars">★ ★ ★ ★ ★</div>
+    GTA Cheat Codes &mdash; Offline Reference App
+  </footer>
+
+</div>
+
+</body>
+</html>
